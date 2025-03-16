@@ -1,5 +1,6 @@
 import React from "react";
 import Product from "../components/products";
+import Image from "next/image";
 
 const categories = [
     { name: "O'zbekistonga yetkazish" },
@@ -30,22 +31,49 @@ const Hero = () => {
                     ))}
                 </ul>
             </div>
-            <div className=" border">
-                <div className="flex items-center w-[1085px] h-[225px] bg-[#C4EAD2] rounded-[6px] relative px-10">
-                    <div className="border">
-                        <div>
-                            <h1 className="font-bold text-[28px] text-[#071612] w-[550px] leading-tight">
-                                Yangi ro’yxatdan o’tgan mijozlarga ilk buyurtma bepul yetkazib beriladi!
-                            </h1>
-                            <div className="flex items-center text-[#071612] font-semibold text-[16px] mt-5">
-                                <span>1833-2178</span>
-                            </div>
-                        </div>
-                        <div>
-                            <Product />
+            <div>
+                <div className="flex items-center w-[1200px] h-[225px] bg-[#C4EAD2] rounded-[6px] relative px-10">
+                    <div>
+                        <h1 className="font-bold text-[28px] text-[#071612] w-[550px] leading-tight">
+                            Yangi ro’yxatdan o’tgan mijozlarga ilk buyurtma bepul yetkazib beriladi!
+                        </h1>
+                        <div className="flex items-center text-[#071612] font-semibold text-[16px] mt-5">
+                            <span>1833-2178</span>
                         </div>
                     </div>
                 </div>
+                <div className="flex gap-[17px] mt-[43px] ml-[30px]">
+                    <Image src="/yangi_logo.svg" alt="" width={28} height={28}/>
+                    <h1 className="font-bold text-[32px]">Yangi</h1>
+                </div>
+                <div className="grid grid-cols-4 gap-4 mt-[43px] ml-[30px]">
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>
+                <div className="flex gap-[17px] mt-[43px] ml-[30px]">
+                    <Image src="/yangi_logo.svg" alt="" width={28} height={28}/>
+                    <h1 className="font-bold text-[32px]">Ommabop mahsulotlar</h1>
+                </div>
+                <div className="grid grid-cols-4 gap-4 mt-[43px] ml-[30px]">
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>
+                <div>
+                    
+                </div>
+
             </div>
         </div>
     )
