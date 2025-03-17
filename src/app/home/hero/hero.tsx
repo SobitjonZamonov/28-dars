@@ -1,6 +1,6 @@
 import React from "react";
-import Product from "../components/products";
 import Image from "next/image";
+import ProductList from "../components/ProductList";
 
 const categories = [
     { name: "O'zbekistonga yetkazish" },
@@ -43,35 +43,21 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="flex gap-[17px] mt-[43px] ml-[30px]">
-                    <Image src="/yangi_logo.svg" alt="" width={28} height={28}/>
+                    <Image src="/yangi_logo.svg" alt="" width={28} height={28} />
                     <h1 className="font-bold text-[32px]">Yangi</h1>
                 </div>
-                <div className="grid grid-cols-4 gap-4 mt-[43px] ml-[30px]">
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
+                <div className="mt-[30px]">
+                    <ProductList />
                 </div>
                 <div className="flex gap-[17px] mt-[43px] ml-[30px]">
-                    <Image src="/yangi_logo.svg" alt="" width={28} height={28}/>
+                    <Image src="/yangi_logo.svg" alt="" width={28} height={28} />
                     <h1 className="font-bold text-[32px]">Ommabop mahsulotlar</h1>
                 </div>
-                <div className="grid grid-cols-4 gap-4 mt-[43px] ml-[30px]">
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
+                <div className="mt-[30px]">
+                    <ProductList />
                 </div>
                 <div>
-                    
+
                 </div>
 
             </div>
